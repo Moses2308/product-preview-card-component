@@ -5,3 +5,7 @@
     --color-darkCyan : hsl(158, 36%, 37%);
     --color-cream : hsl(30, 38%, 92%);
 }
+
+body{
+    font-size: 14px;
+}
