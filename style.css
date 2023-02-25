@@ -1,11 +1,26 @@
 :root{
     --color-veryDarkBlue : hsl(212, 21%, 14%);
     --color-darkGrayishBlue : hsl(228, 12%, 48%);
-    --color-white : white;
     --color-darkCyan : hsl(158, 36%, 37%);
     --color-cream : hsl(30, 38%, 92%);
 }
 
-body{
+body {
     font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    min-height: 100vh;
+    background-color: var(--color-cream);
+    color: var(--color-darkGrayishBlue);
+
+    display: grid;
+    place-items: center;
+}
+.product-card{
+    background-color: white;
+    border-radius: 0.75rem;
+    overflow: hidden;
+    margin: 1rem;
+}
+.product-card__container{
+    margin: 1.5rem;
 }
