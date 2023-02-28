@@ -3,6 +3,7 @@
     --color-darkGrayishBlue : hsl(228, 12%, 48%);
     --color-darkCyan : hsl(158, 36%, 37%);
     --color-cream : hsl(30, 38%, 92%);
+    --color-activeDarkCyan : hsl(158, 36%, 25%);
 }
 
 body {
@@ -59,13 +60,33 @@ body {
 }
 .to-cart{
     border: none;
-    padding: 1rem;
+    padding: 0.75rem;
     background-color: var(--color-darkCyan);
     color: white;
     font-weight: 700;
-    border-radius: 0.75rem;
+    border-radius: 0.5rem;
     justify-content: center;
 }
 .to-cart img{
     display: inline;
+}
+
+.to-cart:hover, .to-cart:active{
+    cursor: pointer;
+}
+.to-cart:active{
+    background-color:var(--color-activeDarkCyan) ;
+}
+@media(min-width:600px){
+    .product-card{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        max-width: 595px;
+    }
+    .product-card__container{
+        margin: 1.75rem;
+    }
+    .product-category{
+        font-size: 0.75rem;
+    }
 }
